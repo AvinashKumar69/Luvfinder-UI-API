@@ -1,0 +1,217 @@
+/* // NavBar or Header // */
+
+.header-dropdown-custom {
+    background-color: orange;
+    width: 80px;
+    height: 34px;
+    margin: 2px;
+}
+
+.header-connect-button {
+    background-color: rgb(65, 160, 218);
+    width: 80px;
+    height: 34px;
+    margin: 2px;
+}
+
+.navbar-light .navbar-brand {
+    color: #ff9800;
+    font-size: 40px;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+/* .nav-link:hover {
+    color: #ff9800;
+} */
+
+.nav-item {
+    background-color: #fff;
+}
+
+.dropdown button {
+    border: 0;
+    padding: 8px;
+}
+
+.nav-link {
+    background-color: #fff;
+    color: #172b4c;
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+
+/* // Product Cards // */
+
+
+.card {
+    background-color: #fff;
+    border: 2px solid #fafaf6;
+    font-family: sans-serif;
+    margin: auto;
+    /* box-shadow: 5px 10px #888888; */
+}
+
+.card:hover {
+    box-shadow: 0 14px 24px rgb(0 0 0 / 20%);
+    z-index: 399;
+}
+
+.pull-up {
+    transition: all .25s ease;
+}
+
+.pull-up:hover {
+    transform: scale(1.1);
+}
+
+.h3,
+h3 {
+    font-size: 1.75rem;
+}
+
+.h5,
+h5 {
+    font-size: 1.25rem;
+}
+
+
+
+/* // Product Table -------- Body.Css // */
+
+
+*/ .conta {
+    margin-top: 5vh;
+}
+
+.h {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 54px;
+    font-weight: 600;
+    font-family: 'Rubik';
+    color: #172b4c;
+}
+
+.small-heading {
+    font-family: 'Roboto-condensed', sans-serif;
+    color: #ffa800;
+    font-size: 24px;
+    font-weight: 200;
+
+}
+
+.cont {
+    width: 85vw;
+    margin: auto;
+}
+
+table {
+    color: #172b4c;
+}
+
+td {
+    font-size: 14px;
+}
+
+.rounded-circle {
+    width: 22px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .h {
+        font-size: 2rem;
+    }
+
+    .small-heading {
+        font-size: 1rem;
+    }
+}
+
+.yellowline {
+    background-color: #ffa800 !important;
+    color: #172b4c;
+    height: 1px;
+    width: 100px !important;
+}
+
+
+.telegram-fixed {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #229ED9;
+
+}
+
+@media screen and (min-width: 769px) {
+    #mobile-footer {
+        display: none;
+    }
+
+    td {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .BID {
+        white-space: nowrap;
+        font-size: 13px;
+    }
+
+    .LTC {
+        white-space: nowrap;
+    }
+
+    td {
+        font-size: 13px;
+    }
+}
+
+
+/* // Mobile Footer // */
+
+#mobile-footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #ffa800;
+    padding: 10px 0 10px 0;
+}
+
+
+/* // PreLoader w3Schools // */
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
