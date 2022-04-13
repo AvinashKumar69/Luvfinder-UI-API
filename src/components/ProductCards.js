@@ -5,7 +5,10 @@ import cardBG from '../assets/cardBG1.png';
 import cartPic from '../assets/cartPic1.png';
 
 
-const ProductCards = () => {
+const ProductCards = (props) => {
+    const { previousData, pair, currentCurencyType, coinType } = props
+    console.log('ProductCard props logged-->', previousData, pair, currentCurencyType, coinType);
+
 
     useEffect(() => {
         AOS.init()
@@ -25,15 +28,15 @@ const ProductCards = () => {
                                     alt='usd' style={{ width: '30px', height: '30px' }} />
                                 <div style={{ paddingLeft: '10px' }}>
                                     <div style={{ fontWeight: '700', fontSize: '1rem', color: 'rgb(23, 43, 76)' }}>
-                                        DOGE/USD
+                                        {pair}
                                     </div>
                                     <div style={{ fontSize: '14px', color: 'rgb(120, 123, 134)' }}>
-                                        Dogecoin/U.S. Dollar
+                                        {coinType}/{currentCurencyType}
                                     </div>
                                 </div>
                             </h5>
                             <h4 className='card-text' style={{ fontSize: '28px', fontWeight: '700', color: 'rgb(23, 43, 76)' }}>
-                                0.45 %
+                                {previousData?.last5Mins}
                             </h4>
                             <h6 style={{ color: 'rgb(255, 168, 0)' }}>Last 5 mins</h6>
                             <div className='card-text' style={{ width: '100%', height: '10px' }}>
@@ -50,15 +53,15 @@ const ProductCards = () => {
                                     alt='usd' style={{ width: '30px', height: '30px' }} />
                                 <div style={{ paddingLeft: '10px' }}>
                                     <div style={{ fontWeight: '700', fontSize: '1rem', color: 'rgb(23, 43, 76)' }}>
-                                        DOGE/USD
+                                        {pair}
                                     </div>
                                     <div style={{ fontSize: '14px', color: 'rgb(120, 123, 134)' }}>
-                                        Dogecoin/U.S. Dollar
+                                        {coinType}/{currentCurencyType}
                                     </div>
                                 </div>
                             </h5>
                             <h4 className='card-text' style={{ fontSize: '28px', fontWeight: '700', color: 'rgb(23, 43, 76)' }}>
-                                1.46 %
+                                {previousData?.last1Hour}
                             </h4>
                             <h6 style={{ color: 'rgb(255, 168, 0)' }}>Last 1 hour</h6>
                             <div className='card-text' style={{ width: '100%', height: '10px' }}>
@@ -74,10 +77,10 @@ const ProductCards = () => {
                         <div className="card-body">
                             <h3 style={{ color: 'rgb(255, 168, 0)' }}>Best Price to Trade</h3>
                             <h4 className="card-text" style={{ fontSize: '32px', fontWeight: '700', color: 'rgb(23, 43, 76)' }}>
-                                0.1398721881 %
+                                {previousData?.avg_trage.toFixed(5)} %
                             </h4>
                             <div style={{ fontSize: '14px', color: 'rgb(120, 123, 134)' }}>
-                                Average DOGE/USD net price including commission
+                                Average {pair} net price including commission
                             </div>
                         </div>
                     </div>
@@ -92,15 +95,15 @@ const ProductCards = () => {
                                     alt='usd' style={{ width: '30px', height: '30px' }} />
                                 <div style={{ paddingLeft: '10px' }}>
                                     <div style={{ fontWeight: '700', fontSize: '1rem', color: 'rgb(23, 43, 76)' }}>
-                                        DOGE/USD
+                                        {pair}
                                     </div>
                                     <div style={{ fontSize: '14px', color: 'rgb(120, 123, 134)' }}>
-                                        Dogecoin/U.S. Dollar
+                                        {coinType}/{currentCurencyType}
                                     </div>
                                 </div>
                             </h5>
                             <h4 className='card-text' style={{ fontSize: '28px', fontWeight: '700', color: 'rgb(23, 43, 76)' }}>
-                                5.19 %
+                                {previousData?.last24Hours}
                             </h4>
                             <h6 style={{ color: 'rgb(255, 168, 0)' }}>Last 1 Day</h6>
                             <div className='card-text' style={{ width: '100%', height: '10px' }}>
@@ -117,15 +120,15 @@ const ProductCards = () => {
                                     alt='usd' style={{ width: '30px', height: '30px' }} />
                                 <div style={{ paddingLeft: '10px' }}>
                                     <div style={{ fontWeight: '700', fontSize: '1rem', color: 'rgb(23, 43, 76)' }}>
-                                        DOGE/USD
+                                        {pair}
                                     </div>
                                     <div style={{ fontSize: '14px', color: 'rgb(120, 123, 134)' }}>
-                                        Dogecoin/U.S. Dollar
+                                        {coinType}/{currentCurencyType}
                                     </div>
                                 </div>
                             </h5>
                             <h4 className='card-text' style={{ fontSize: '28px', fontWeight: '700', color: 'rgb(23, 43, 76)' }}>
-                                11.55 %
+                                {previousData?.last7Days}
                             </h4>
                             <h6 style={{ color: 'rgb(255, 168, 0)' }}>Last 7 Days</h6>
                             <div className='card-text' style={{ width: '100%', height: '10px' }}>

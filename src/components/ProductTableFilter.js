@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Navbar.css';
 
 
 
-const ProductTableFilter = () => {
+const ProductTableFilter = (props) => {
+
+    const { updateCurrencyTypeSelect, updateCoinType, coinType, currentCurencyType } = props
+
     return (
         <div className='dropdown nav-item' style={{ display: 'inline-block' }}>
             <div className="btn-group dropdown nav-item">
@@ -13,19 +16,13 @@ const ProductTableFilter = () => {
                         minWidth: '80px', marginBottom: '10px', marginLeft: '15px'
                     }}
                 >
-                    USD
+                    {currentCurencyType}
                 </button>
-                <ul className="dropdown-menu dropdown">
-                    <li><a className="dropdown-item" href="#">USD</a></li>
-                    <li><a className="dropdown-item" href="#">USD</a></li>
-                    <li><a className="dropdown-item" href="#">USD</a></li>
-                    <li><a className="dropdown-item" href="#">USD</a></li>
-                    <li><a className="dropdown-item" href="#">USD</a></li>
-                    <li><a className="dropdown-item" href="#">USD</a></li>
-                    <li><a className="dropdown-item" href="#">USD</a></li>
-                    <li><a className="dropdown-item" href="#">USD</a></li>
-                    <li><a className="dropdown-item" href="#">USD</a></li>
-                </ul>
+                <div className="dropdown-menu dropdown">
+                    {['USD', 'INR', 'JPY', 'EUR', 'RUB', 'CAKE', 'BTC', 'BNB', 'ETH'].map(currencyType =>
+                        <li key={currencyType} onClick={() => updateCurrencyTypeSelect(currencyType)}><a className="dropdown-item" name='USD'>{currencyType}</a></li>
+                    )}
+                </div>
             </div>
 
             <div className="btn-group dropdown">
@@ -35,19 +32,13 @@ const ProductTableFilter = () => {
                         minWidth: '100px', marginBottom: '10px', marginLeft: '15px'
                     }}
                 >
-                    DOGE
+                    {coinType}
                 </button>
-                <ul className="dropdown-menu dropdown">
-                    <li><a className="dropdown-item" href="#">DOGE</a></li>
-                    <li><a className="dropdown-item" href="#">DOGE</a></li>
-                    <li><a className="dropdown-item" href="#">DOGE</a></li>
-                    <li><a className="dropdown-item" href="#">DOGE</a></li>
-                    <li><a className="dropdown-item" href="#">DOGE</a></li>
-                    <li><a className="dropdown-item" href="#">DOGE</a></li>
-                    <li><a className="dropdown-item" href="#">DOGE</a></li>
-                    <li><a className="dropdown-item" href="#">DOGE</a></li>
-                    <li><a className="dropdown-item" href="#">DOGE</a></li>
-                </ul>
+                <div className="dropdown-menu dropdown">
+                    {['DOGE', 'SHIB', 'MIM', 'SPELL', 'BABYDOGE', 'ELON', 'SAMO', 'CATE', 'HOGE', 'DOBO'].map(coin =>
+                        <li key={coin} onClick={() => updateCoinType(coin)}><a className="dropdown-item" name='DOGE'>{coin}</a></li>
+                    )}
+                </div>
             </div>
         </div>
     )
