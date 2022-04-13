@@ -15,8 +15,8 @@ const ProductCards222 = (props) => {
     }, [])
 
     return (
-        <div className='row justify-content-center overflow-hidden w-100' 
-        style={{ paddingTop: '40px', paddingBottom: '50px', paddingLeft: '12px', fontSize:'23px' }}
+        <div className='row justify-content-center overflow-hidden w-100'
+            style={{ paddingTop: '40px', paddingBottom: '50px', paddingLeft: '12px', fontSize: '23px' }}
         >
 
             {/* // Bid Percentage // */}
@@ -65,6 +65,7 @@ const ProductCards222 = (props) => {
                 </div>
             </div>
 
+            {/* // the profit you earn at 1 coin -- 3rd card // */}
             <div className='col-lg-4 col-md-4 col-xs-12 overflow-hidden' data-aos='fade-up'>
                 <div className='card pull-up mt-5' style={{ width: '100%' }}>
                     <div className='card-body'>

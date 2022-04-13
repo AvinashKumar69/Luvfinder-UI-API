@@ -2,79 +2,91 @@ nav {
     background-color: white;
     font-family: 'IBM Plex Sans', sans-serif;
 }
-#navbar_top{
-    padding:10px 40px 0 30px;
+
+#navbar_top {
+    padding: 10px 40px 0 30px;
 }
-.nav-top-after{
- padding:0 10px 0 10px;
+
+.nav-top-after {
+    padding: 0 10px 0 10px;
 }
-.nav-item{
+
+.nav-item {
     background-color: white;
 }
 
-.cont{
-    width:100vw;
+.cont {
+    width: 100vw;
     padding: 0 7.5% 0 7.5%;
 }
-.brand{
+
+.brand {
     font-size: 2rem;
-    color:#ffa800;
+    color: #ffa800;
     font-weight: 700;
     text-shadow: 1px 1px black;
 }
-.brand:hover{
-    
-    color:#ffa800;
-    
+
+.brand:hover {
+
+    color: #ffa800;
+
 }
 
 
-.nav-link{
-    font-family: 'IBM Plex Sans', sans-serif; 
-    
+.nav-link {
+    font-family: 'IBM Plex Sans', sans-serif;
+
     color: #172b4c;
-    background-color:white;
-    margin-left:15px;
+    background-color: white;
+    margin-left: 15px;
     font-weight: 700;
 }
-.my-toggler{
+
+.my-toggler {
     border-color: white;
 }
-.nav-link:hover{
-    color:#ffa800; 
+
+.nav-link:hover {
+    color: #ffa800;
     background-color: white;
 }
-.nav-link:active{
-    border:1px solid white;
-    color:#ffa800; 
+
+.nav-link:active {
+    border: 1px solid white;
+    color: #ffa800;
     background-color: white;
 }
-.dropdown-toggle:active{
-    color:#ffa800; 
+
+.dropdown-toggle:active {
+    color: #ffa800;
     background-color: white;
 }
-.navbar-toggler{
-    background-color:#ffa800;
-}  
+
+.navbar-toggler {
+    background-color: #ffa800;
+}
 
 .custom-toggler .navbar-toggler-icon {
-    background-image: url(
-"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.dropdown button{
- padding:8px;
- border:0px;
+.dropdown button {
+    padding: 8px;
+    border: 0px;
 
 }
-.dropdown-item:hover{
-background-color:#ffa800 ;
-color:white;
+
+.dropdown-item:hover {
+    background-color: #ffa800;
+    color: white;
 }
-.navbar-collapse{
+
+.navbar-collapse {
     background-color: white;
 }
-#btn-coin{
+
+#btn-coin {
     background-color: rgb(255 179 31) !important;
-    color:white;
+    color: white;
 }

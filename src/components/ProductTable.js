@@ -9,13 +9,6 @@ const ProductTable = (props) => {
     const { mainData } = props
     console.log('mainData in ProductTable-->', mainData);
 
-    // const bidPercentageArray = mainData?.map((bidPercentage) => {
-    //     return (
-    //         bidPercentage.bid_percentage
-    //     )
-    // })
-    // console.log('bidPercentageArray--->', bidPercentageArray);
-
     useEffect(() => {
         AOS.init()
         AOS.refresh()
