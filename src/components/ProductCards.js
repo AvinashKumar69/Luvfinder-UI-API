@@ -36,7 +36,7 @@ const ProductCards = (props) => {
                                 </div>
                             </h5>
                             <h4 className='card-text' style={{ fontSize: '28px', fontWeight: '700', color: 'rgb(23, 43, 76)' }}>
-                                {previousData?.last5Mins}
+                                {previousData?.last5Mins} %
                             </h4>
                             <h6 style={{ color: 'rgb(255, 168, 0)' }}>Last 5 mins</h6>
                             <div className='card-text' style={{ width: '100%', height: '10px' }}>
@@ -61,7 +61,7 @@ const ProductCards = (props) => {
                                 </div>
                             </h5>
                             <h4 className='card-text' style={{ fontSize: '28px', fontWeight: '700', color: 'rgb(23, 43, 76)' }}>
-                                {previousData?.last1Hour}
+                                {previousData?.last1Hour} %
                             </h4>
                             <h6 style={{ color: 'rgb(255, 168, 0)' }}>Last 1 hour</h6>
                             <div className='card-text' style={{ width: '100%', height: '10px' }}>
@@ -103,7 +103,7 @@ const ProductCards = (props) => {
                                 </div>
                             </h5>
                             <h4 className='card-text' style={{ fontSize: '28px', fontWeight: '700', color: 'rgb(23, 43, 76)' }}>
-                                {previousData?.last24Hours}
+                                {previousData?.last24Hours} %
                             </h4>
                             <h6 style={{ color: 'rgb(255, 168, 0)' }}>Last 1 Day</h6>
                             <div className='card-text' style={{ width: '100%', height: '10px' }}>
@@ -128,7 +128,7 @@ const ProductCards = (props) => {
                                 </div>
                             </h5>
                             <h4 className='card-text' style={{ fontSize: '28px', fontWeight: '700', color: 'rgb(23, 43, 76)' }}>
-                                {previousData?.last7Days}
+                                {previousData?.last7Days} %
                             </h4>
                             <h6 style={{ color: 'rgb(255, 168, 0)' }}>Last 7 Days</h6>
                             <div className='card-text' style={{ width: '100%', height: '10px' }}>
