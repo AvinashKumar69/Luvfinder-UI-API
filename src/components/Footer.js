@@ -34,9 +34,6 @@ const Footer = (props) => {
 
             </div>
 
-
-
-
             <a className='telegram-fixed' href='http://t.me/Luvfindingbot' target='_blank' rel='noreferrer'>
                 <i className="bi bi-telegram" style={{ color: 'white', backgroundImage: 'rgb(34, 158, 217)', fontSize: '22px' }}></i>
             </a>
